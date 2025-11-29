@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cj0774417fca1" path="res://lava.png" id="2_r0nac"]
 [ext_resource type="PackedScene" uid="uid://df6fcmphjfr0m" path="res://Scenes/Player.tscn" id="3_kjfpe"]
 [ext_resource type="Script" uid="uid://b35hy3d0xo6ni" path="res://Scripts/level1.gd" id="4_kjfpe"]
-[ext_resource type="Texture2D" uid="uid://chi6kbsmfckpe" path="res://image (2).png" id="4_r0nac"]
+[ext_resource type="Texture2D" uid="uid://chi6kbsmfckpe" path="res://Win.png" id="4_r0nac"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8j60k"]
 texture = ExtResource("1_6aodu")

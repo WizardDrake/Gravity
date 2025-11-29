@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://test.svg" id="1_1q6tm"]
 [ext_resource type="PackedScene" uid="uid://df6fcmphjfr0m" path="res://Scenes/Player.tscn" id="1_v3rpw"]
 [ext_resource type="Texture2D" uid="uid://cj0774417fca1" path="res://lava.png" id="2_v36qu"]
-[ext_resource type="Texture2D" uid="uid://chi6kbsmfckpe" path="res://image (2).png" id="4_cggpd"]
+[ext_resource type="Texture2D" uid="uid://chi6kbsmfckpe" path="res://Win.png" id="4_cggpd"]
 [ext_resource type="Script" uid="uid://iwhtsngerqet" path="res://Scripts/level2.gd" id="4_v36qu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_055b2"]

@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="New Game Project"
-run/main_scene="uid://bhwl8lyksx737"
+config/name="Gravity-game"
+run/main_scene="uid://c2nbjx01yn8l5"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://test.svg"
 
