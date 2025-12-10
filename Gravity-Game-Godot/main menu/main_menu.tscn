@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2nbjx01yn8l5"]
+
+[ext_resource type="Script" uid="uid://de6vf0ptlcnci" path="res://main menu/scripts/play.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://cqsyjvvek6c33" path="res://main menu/scripts/exit.gd" id="3_fu7sn"]
+
+[node name="main menu" type="Node2D"]
+
+[node name="play" type="Button" parent="."]
+offset_left = -35.0
+offset_top = -37.0
+offset_right = 35.0
+offset_bottom = -6.0
+text = "Play"
+script = ExtResource("1_06t4h")
+
+[node name="exit" type="Button" parent="."]
+offset_left = -34.0
+offset_top = 3.0
+offset_right = 36.0
+offset_bottom = 34.0
+text = "Exit"
+script = ExtResource("3_fu7sn")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
+
+[connection signal="pressed" from="play" to="play" method="_on_pressed"]
