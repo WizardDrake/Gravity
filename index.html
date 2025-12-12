@@ -1,16 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of versions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Gravity – My Godot Games</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#6366f1',
+              600: '#4f46e5'
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    <h1>Welcome to Version List</h1>
-    <a href = Builds/0.1_beta/0.1_beta_web.html>Play 0.1 beta</a><br>
-    <p>0.2 beta web build unfortunatly doesn't work. use the windows build to play.</p><br>
-    <a href = Builds/0.3_beta/0.3_beta_web.html>Play 0.3 beta</a><br>
-    <a href = Builds/0.4_beta/0.4_beta_web.html>Play 0.4 beta</a><br>
-    <a href = Builds/TO-DO.html>See TO-DO list</a>
+<body class="h-full bg-slate-950 text-slate-100">
+<div class="min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white font-bold">
+            G
+          </span>
+          <span class="font-semibold tracking-tight">
+            My Godot Games
+          </span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+          <a href="https://wizarddrake.github.io/Personal-Site/" class="hover:text-white">Home</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex-1">
+    <!-- TITLE -->
+    <section class="border-b border-slate-800">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div>
+            <p class="text-xs uppercase tracking-wide text-slate-400">
+              Game page
+            </p>
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white">
+              Project Gravity
+            </h1>
+          </div>
+          <span class="inline-flex items-center rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">
+            Playable in browser
+          </span>
+        </div>
+        <p class="text-sm sm:text-base text-slate-300 max-w-3xl">
+          Simple top down puzzel game. Built with Godot 4.5.
+        </p>
+      </div>
+    </section>
+
+    <!-- GAME EMBED -->
+    <section class="border-b border-slate-800 bg-slate-950">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+        <h2 class="text-sm font-semibold text-white mb-3">
+          Play in your browser
+        </h2>
+        <div class="rounded-xl border border-slate-800 bg-slate-900/70 overflow-hidden">
+          <!-- IMPORTANT: this points to the GitHub Pages URL of the game repo -->
+          <iframe
+            src="Builds/0.4_beta/0.4_beta_web.html"
+            title="Project Nebula - Latest Version"
+            class="w-full aspect-video bg-black"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="mt-2 text-[11px] text-slate-500">
+        </p>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section class="border-b border-slate-800 bg-slate-950">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 grid gap-10 lg:grid-cols-3">
+        <div class="lg:col-span-2 space-y-4 text-sm text-slate-300">
+          <h2 class="text-base font-semibold text-white">About the game</h2>
+          <p>Project Gravity is a small puzzel game created with the Godot Engine.
+          </p>
+        </div>
+
+        <aside class="space-y-4 text-sm">
+          <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-4 space-y-2">
+            <h3 class="text-xs font-semibold text-slate-200 uppercase tracking-wide">
+              Details
+            </h3>
+            <p><span class="text-slate-400">Version:</span> v0.4</p>
+            <p><span class="text-slate-400">Engine:</span> Godot 4.5</p>
+            <p><span class="text-slate-400">Platforms:</span> Browser, Windows</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+      <p>&copy; <span id="year"></span> My Godot Games.</p>
+      <a href="index.html" class="text-slate-300 hover:text-white">← Back to all games</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
